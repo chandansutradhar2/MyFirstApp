@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyFirstApp
 {
-    internal class LoopDemo
+    internal class WhileLoopDemo
     {
-        public void WhileLoopDemo() 
+        public void WhileLoop() 
         {
             int num = 0;
 

@@ -8,11 +8,17 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            LoopDemo obj=new LoopDemo();
-            //obj.WhileLoopDemo();
+            ForLoopDemo obj = new ForLoopDemo();
+            //obj.ForLoop();
+            int[] myScores = { 28, 48, 38, 15, 37, 100, 65, 34, 22, 81, 72, 44, 34, 23, 21, 75, 56, 78, 45, 44, 89, 98, 76, 75, 71, 23, 34, 32, 22 };
+            //obj.ShowHigestScore(myScores);
+            //obj.ForEachLoopDemo(myScores);
+            obj.FindAverage(myScores);
+            //LoopDemo obj=new LoopDemo();
+            //obj.WhileLoop();
             //obj.LocateStore("pune");
             //obj.DoWhileLoopDemo();
-            obj.TrackSession();
+            //obj.TrackSession();
             //SwitchDemo obj2 = new SwitchDemo();
             //Console.WriteLine("Enter Score");
             //int score=Convert.ToInt32 (Console.ReadLine());
