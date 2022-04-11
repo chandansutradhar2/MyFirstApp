@@ -8,14 +8,16 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            Class1 obj=new Class1();
-            obj.Add();
-
-            SwitchDemo obj2 = new SwitchDemo();
-            Console.WriteLine("Enter Score");
-            int score=Convert.ToInt32 (Console.ReadLine());
-            obj2.PrintResult(score);
-            obj2.PrintGreeting("night");
+            LoopDemo obj=new LoopDemo();
+            //obj.WhileLoopDemo();
+            //obj.LocateStore("pune");
+            //obj.DoWhileLoopDemo();
+            obj.TrackSession();
+            //SwitchDemo obj2 = new SwitchDemo();
+            //Console.WriteLine("Enter Score");
+            //int score=Convert.ToInt32 (Console.ReadLine());
+            //obj2.PrintResult(score);
+            //obj2.PrintGreeting("night");
 
             //int cnt=10;
             //const double pieValue=3.14;
