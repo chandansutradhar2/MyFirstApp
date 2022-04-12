@@ -23,7 +23,11 @@ namespace MyFirstApp
             this.modelNo = _modelNo;
         }
 
+        public Car(string _name)
+        {
+            this.carName= _name;
 
+        }
         public void Start() {
             Console.WriteLine($"{this.carName} Car started..");
         }

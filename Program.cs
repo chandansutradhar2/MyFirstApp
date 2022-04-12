@@ -8,14 +8,19 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
+            Message msg = new Message("Login Result","Invalid Credentials",5000);
+            msg.Show();
+            msg.Hide();
+            
             
            /* RaceCar superCar=new RaceCar();
             superCar.BoostNitro(4);*/
             
-            Car car=new Car("Nexon","TATA","XZA");
-            Car newCar=new Car("I20","Hyundai","SportZ");
-            newCar.Start(); //method invocation
-            car.Start();
+            //Car car=new Car("Nexon","TATA","XZA");
+            //Car newCar=new Car("I20","Hyundai","SportZ");
+            //Car obj2 = new Car("Swift");
+            //newCar.Start(); //method invocation
+            //car.Start();
             //newCar.BoostNitro(); //error --method not found in class
             //ArrayDemo demo = new ArrayDemo();
 
