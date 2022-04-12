@@ -8,14 +8,24 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            Message msg = new Message("Login Result","Invalid Credentials",5000);
-            msg.Show();
-            msg.Hide();
-            
-            
-           /* RaceCar superCar=new RaceCar();
-            superCar.BoostNitro(4);*/
-            
+            //Message msg = new Message("Login Result","Invalid Credentials",5000);
+            //msg.Show();
+            //msg.Hide();
+
+            Car obj = new Car("tiago", MFG_NAME.TATA, "ZXA");
+            Car obj2 = new Car("i20",MFG_NAME.HYUNDAI, "sportZ");
+            Console.WriteLine(obj2.carName);
+
+            Logger log = new Logger("c://chandan//myFirstApp//info.log");
+            log.Write("12/04/2022:11:12:30","Starting server..",LOG_TYPE.INFO);
+            log.Write("12/04/2022:11:12:40", "Reading Server Configuration",LOG_TYPE.INFO);
+            log.Write("12/04/2022:11:12:50", "setting port and api", LOG_TYPE.INFO);
+            log.Write("12/04/2022:11:13:10", "running server at port 5000", LOG_TYPE.SUCCESS);
+            log.Write("12/04/2022:11:13:20", "failed to initialized database", LOG_TYPE.ERROR);
+
+            /* RaceCar superCar=new RaceCar();
+             superCar.BoostNitro(4);*/
+
             //Car car=new Car("Nexon","TATA","XZA");
             //Car newCar=new Car("I20","Hyundai","SportZ");
             //Car obj2 = new Car("Swift");

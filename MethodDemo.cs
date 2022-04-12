@@ -12,15 +12,20 @@ namespace MyFirstApp
         public string carName;
         public string carId;
         public string carType;
-        public string mfgName;
+        public MFG_NAME mfgName;
         public string modelNo;
         public string modelType;
+        
         public int engineCapacity;
 
-        public Car( string _name,string _mfgName, string _modelNo) {
+        public Car( string _name,MFG_NAME _mfgName, string _modelNo) {
             this.carName = _name;
             this.mfgName = _mfgName;
             this.modelNo = _modelNo;
+
+            if (this.mfgName == MFG_NAME.TATA) { 
+            //code to give discount
+            }
         }
 
         public Car(string _name)
@@ -64,4 +69,15 @@ namespace MyFirstApp
     //    }
 
     //}
+
+
+    public enum MFG_NAME { 
+    TATA,
+    HYUNDAI,
+    TOYOTA,
+    HONDA,
+    KIA,
+    MAHINDRA,
+    MARUTI
+    }
 }
