@@ -8,12 +8,24 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            ForLoopDemo obj = new ForLoopDemo();
+            
+           /* RaceCar superCar=new RaceCar();
+            superCar.BoostNitro(4);*/
+            
+            Car car=new Car("Nexon","TATA","XZA");
+            Car newCar=new Car("I20","Hyundai","SportZ");
+            newCar.Start(); //method invocation
+            car.Start();
+            //newCar.BoostNitro(); //error --method not found in class
+            //ArrayDemo demo = new ArrayDemo();
+
+            //demo.PrintName();
+            //ForLoopDemo obj = new ForLoopDemo();
             //obj.ForLoop();
-            int[] myScores = { 28, 48, 38, 15, 37, 100, 65, 34, 22, 81, 72, 44, 34, 23, 21, 75, 56, 78, 45, 44, 89, 98, 76, 75, 71, 23, 34, 32, 22 };
+            //int[] myScores = { 28, 48, 38, 15, 37, 100, 65, 34, 22, 81, 72, 44, 34, 23, 21, 75, 56, 78, 45, 44, 89, 98, 76, 75, 71, 23, 34, 32, 22 };
             //obj.ShowHigestScore(myScores);
             //obj.ForEachLoopDemo(myScores);
-            obj.FindAverage(myScores);
+            //obj.FindAverage(myScores);
             //LoopDemo obj=new LoopDemo();
             //obj.WhileLoop();
             //obj.LocateStore("pune");
@@ -29,7 +41,7 @@ namespace MyFirstApp
             //const double pieValue=3.14;
 
             //string stringCnt = Convert.ToString(cnt);
-            
+
             //double varDouble = 10.76;
             //char varChar = 'a';
             //string varString = "this is a string variable";
@@ -39,28 +51,14 @@ namespace MyFirstApp
             //Console.WriteLine("Char value="+varChar);
             //cnt = 10;
             ////pieValue = 3.16;
-            
+
             //Console.WriteLine("int cnt="+cnt);
             //Console.WriteLine("double varDouble=" + varDouble);
 
-            
+
 
         }
 
-        void SomeMethod() 
-        {
-       
-
-            cnt = 200;
-            cnt = 500;
-
-        }
-
-        void AnotherMethod()
-        {
-            
-            cnt = cnt - 50;
-        }
 
     }
 }

@@ -39,11 +39,7 @@ namespace MyFirstApp
             //    Console.WriteLine("user is not admin");
             //}
 
-            char v1 = 'y';
-            char v2 = 'e';
-            char v3 = 's';
-
-            string someData = "     india is my country";
+         
             
             //Console.WriteLine(someData.Contains("france"));
            // Console.WriteLine(someData.Trim());
