@@ -10,6 +10,7 @@ namespace MyFirstApp
     internal class PropDemo
     {
         Regex regex = new Regex(@"[\d]");
+        
 
         private string _name="chandan";
 
@@ -19,6 +20,7 @@ namespace MyFirstApp
                 return _name;
             }
             set {
+               
                 if (regex.IsMatch(value))
                 {
                     Console.WriteLine("Name cannot be number");
