@@ -46,7 +46,7 @@ namespace MyFirstApp
         }
     }
 
-    public class DerivedClass : PublicClass {
+    internal class DerivedClass : PublicClass {
 
         public DerivedClass() {
             this.pubAttr="";

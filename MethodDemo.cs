@@ -40,13 +40,13 @@ namespace MyFirstApp
         //method declaration
         public void Stop() {
             Console.WriteLine("Car Stopped..");
-            try
-            {
+            //try
+            //{
 
-            }
-            catch (Exception exe)
-            {
-            }
+            //}
+            //catch (Exception exe)
+            //{
+            //}
         }
 
  

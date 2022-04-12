@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace MyFirstApp
 {
-    internal class Logger
+    public class Logger
     {
-        string logPath;
+        private string logPath;
+        private string streamReader;
         public Logger(string logPath) {
         this.logPath = logPath;
         Console.WriteLine("Initialized Logger to write into file located at "+logPath);
         }
         //info, warn, error
-        public void Write(string dateTime,string logMsg, LOG_TYPE logType) {
-            Console.WriteLine($"{dateTime}:{logType}:{logMsg}");
-        }
+        //public static void Write(string dateTime,string logMsg, LOG_TYPE logType) {
+        //    Console.WriteLine($"{dateTime}:{logType}:{logMsg}");
+        //}
     }
 
     enum LOG_TYPE { 
@@ -26,5 +27,16 @@ namespace MyFirstApp
         FATAL,
         SUCCESS
 
+    }
+
+
+    class TestDemo {
+
+        void Test() {
+            Logger obj = new Logger("");
+            //obj.streamReader = "my own logic";
+
+
+        }
     }
 }
