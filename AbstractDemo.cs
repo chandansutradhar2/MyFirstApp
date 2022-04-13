@@ -42,9 +42,11 @@ namespace MyFirstApp
 
     public class AnotherDeveloper:AuthImpl {
 
-        void Test() {
-            this.LoginWithEmailAndPassword();
+        int Test() {
+            //var s[] = { 1, 2 };
 
+            this.LoginWithEmailAndPassword();
+            return 0;
         }
     }
 }

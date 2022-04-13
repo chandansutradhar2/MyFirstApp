@@ -1,5 +1,11 @@
-﻿function fun1(){
+﻿
+function fun1(n1,n2){
 console.log("fun1 invoked");
+console.log(n1,n2);
+}
+
+function Add(n1,n2){
+return n1+n2;
 }
 
 function fun2(){
@@ -14,8 +20,5 @@ function fun4(){
 console.log("fun4 invoked");
 }
 
-fun3();
-fun4();
 
-fun1();
-fun2();
+console.log(Add(133,'10'));
